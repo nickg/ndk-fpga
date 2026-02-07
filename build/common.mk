@@ -91,8 +91,8 @@ nvc: $(MOD)
 else
 .PHONY: $(GEN_MK_NAME)
 $(GEN_MK_NAME):
-	$(call print_label,Generate Makefile "$(GEN_MK_NAME)" with prerequisites)
-	@$(NETCOPE_ENV) $(TCLSH) $(SYNTHFILES) -t makefile -p $(GEN_MK_NAME)
+	#$(call print_label,Generate Makefile "$(GEN_MK_NAME)" with prer0equisites)
+	#$(NETCOPE_ENV) $(TCLSH) $(SYNTHFILES) -t makefile -p $(GEN_MK_NAME)
 
 $(GEN_MK_TARGETS): $(GEN_MK_NAME)
 	@$(MAKE_REC) $(GEN_MK_ENV) GEN_MK_TARGET=1 $@

@@ -47,3 +47,4 @@ all: 100g2 40g2 25g8 10g8
 10g8: build
 
 include $(CARD_BASE)/src/card.mk
+export DMA_TYPE=0
